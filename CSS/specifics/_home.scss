@@ -1,28 +1,4 @@
-$dark-violet:rgb(64, 2, 125);
 
 .home-body {
-    overflow: hidden;
-    background: linear-gradient(320deg, $dark-violet, $bg-color);
-    width:100vw;
-    height: 100vh;
-    .steve {
-        & > img {
-            opacity: 0.4;
-            z-index: -3;
-            position: absolute;
-            top: 5vh;
-            left: 40vw;
-            width: 60vw;
-            height: auto;
-        }
-    }
-    .home-text {
-        position:absolute;
-        left: 7vw;
-        top: 35vh;
-        font-style: italic;
-        line-height: 7vh;
-        color: rgb(146, 153, 197);
-        font-size : 2.5vw;
-    } 
+
 }

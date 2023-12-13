@@ -1,153 +1,93 @@
-@import "specifics/index";
 @import "specifics/contact";
-@import "specifics/hero";
-@import "specifics/works";
+@import "specifics/about";
+@import "specifics/projects";
 @import "specifics/home";
 
-@font-face { font-family: 'Rosie'; src: url('../ASSETS/fonts/Rosie.woff2') format('woff2'); }
-@font-face { font-family: 'Croissant'; src: url('../ASSETS/fonts/Croissant.woff2') format('woff2'); }
-@font-face { font-family: 'BitMap'; src: url('../ASSETS/fonts/BitMap.woff2') format('woff2'); }
-@font-face { font-family: 'Eiko'; src: url('../ASSETS/fonts/PPEiko-Medium.otf') format("opentype"); }
-
-$stylish-font : "Rosie";
-$details-font : "BitMap";
-$bg-color : #1a1615; 
-$first-color: #dbfdff;
-$violet:#7f00ff;
-$dark-violet:rgb(47, 4, 90);
-$in-between-violet: rgb(0, 42, 255);
-$blue: #11c7f5;
-
-@keyframes background-pan {
-    from { background-position: 0% center; }
-    to { background-position: -200% center; }
+@font-face {
+    font-family: 'MySoul';
+    src: url("../ASSETS/fonts/MySoul.woff2");
 }
 
-@keyframes star-rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+@font-face {
+    font-family: 'Ahganirya';
+    src: url("../ASSETS/fonts/Ahganirya.woff2");
 }
 
+$background: #121212;
+$red: #DF7979;
+$stylish-letter-font: 'MySoul';
+$normal-font: 'Ahganirya';
 
-
-//______________________________________ GENERAL BODY SETTINGS ______________________________________//
-
-
-
-html {
-    body {
+body {
+    background: $background;
+    color: white;
+    font-family: $normal-font;
+    height: 100vh;
+    margin: 0;
+    width: 100vw;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    .upper-section {
+        position: absolute;
+        height: 3vh;
+        width: 100vw;
         top: 0;
         left: 0;
-        -webkit-font-smoothing:antialiased;
-        background: $bg-color;
-        scroll-behavior: smooth;
-        font-size: 25px;
-        // font-style: italic;
-        width: 100vw;
-        margin-top: 0px;
-        margin-left: 0;
-        font-family: $details-font;
-        .magic {
-            animation: background-pan 3s linear infinite;
-            white-space: nowrap;
-            background: linear-gradient(to right, $blue, $violet, $blue);
-            background-size: 200%;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            padding-right: 5px;
-        }
-        color: $first-color;
-        .title {
-            font-style: normal;
-            font-family: $stylish-font;
-            font-weight: 500;
-            font-size: 90px;
-            .to-grip {
-                margin-left: -10px;
+
+    }
+    nav {
+        width: 30vw;
+        height: 100vh;
+        position: fixed;
+        right: -30vw;
+        top: 0;
+        border-left: 1px solid white;
+        z-index: 2;
+        background: linear-gradient(to right, rgba(26, 25, 25, 0.21), rgba(0,0,0,1));
+        backdrop-filter: blur(20px);
+        .nav-wrapper {
+            height: 100%;
+            width: 90%;
+            margin-right: 10%;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+            .link {
+                margin-bottom: 2vh;
+                margin-top: 2vh;
+                a {
+                    font-size: 2vw;
+                    text-decoration: none;
+                    color: rgba(255, 255, 255, 0.6);
+                }
             }
         }
-        .details {
-            font-family: $details-font; 
-            font-size: 90px;
-        }
-        #fadeInNextPage {
+    }
+    main {
+        .title-wrapper {
             position: absolute;
-            width: 1000%;
-            height: 1000%;
-            opacity: 0;
-            background-color: $bg-color;
-        }
-    }
-}
-
-
-
-//______________________________________ NAVIGATION MENU SETTINGS ______________________________________//
-
-    
-
-nav {
-    position: absolute;
-    z-index: 10;
-    width: 100vw;
-    opacity: 0;
-    height: 100vh;
-    transition-property: opacity;
-    transition-duration: 333ms;
-    pointer-events: none;
-    background-color: rgba( 0, 0, 0, 0.5);
-    backdrop-filter: blur(20px);
-    .nav-wrapper {
-        display: grid;
-        overflow: visible;
-        grid-template-rows: 1fr 1fr 1fr;
-        height: 100%;
-        justify-items: center;
-        align-items: center;
-        a {
-            font-size: 5vw;
-            font-family: $details-font;
-            font-style: normal;
-            color: $first-color;
-
-            align-self: center;
-            text-decoration: none;
-            transition: all 0.2s;
-            &:hover {
-                animation: background-pan 5s linear infinite;
-                letter-spacing: 4px;
-                font-family: $stylish-font;
-                font-size: 12vw;
-                background: linear-gradient(to right, $blue, $violet, $blue);
-                background-size: 200%;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: starcentert;
+            align-items: center;
+            top: 0;
+            left: 10vw;
+            .title-container {
+                font-size: 5vw;
+                line-height: 20vh;
+                .fancy-letter {
+                    color: $red;
+                    font-size: 14vw;
+                    font-family: $stylish-letter-font;
+                }
             }
         }
+        .little-text {
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+        }
     }
-}
-
-.bigger {
-    color: rgb(219, 253, 255);
-    font-size: 3.5vw;
-    font-style: italic;
-}
-.explain {
-    position: absolute;
-    bottom: 4vh;
-    left: 3vw;
-}
-
-
-//______________________________________ CENTER LANDMARK ______________________________________//
-
-
-
-.center-bar {
-    width: 0px;
-    height: 100%;
-    border: 1px white solid;
-    position: absolute;
-    top: 0;
-    left: 50%;
 }
