@@ -1,0 +1,220 @@
+:root {
+    --background-color: rgb(6, 11, 25);
+    --border-color: rgb(255, 255, 255, 0.1);
+    --highlight-color: rgb(126, 87, 194);
+    --yt-color: rgb(229, 57, 53);
+  }
+
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  main {
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  main > article {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: transform 400ms ease;  
+  }
+  
+  main > article[data-status="inactive"] {
+    transform: translateX(-100%);
+    transition: none;
+  }
+  
+  main > article[data-status="active"] {
+    transform: translateX(0%);
+  }
+  
+  main > article[data-status="before"] {
+    transform: translateX(-100%);
+  }
+  
+  main > article[data-status="after"] {
+    transform: translateX(100%);
+  }
+  
+  main > article[data-status="becoming-active-from-before"] {
+    transform: translateX(-100%);
+    transition: none;
+  }
+  
+  main > article[data-status="becoming-active-from-after"] {
+    transform: translateX(100%);
+    transition: none;
+  }
+  
+  main > article > .article {
+    height: 100%;
+    display: flex;
+  }
+  
+  main > article > .description,
+  main > article > .nav {
+    border-left: 1px solid var(--border-color);
+  }
+  
+  main > article > .title,
+  main > article > .nav {
+    border-top: 1px solid var(--border-color);
+  }
+  
+  main > article:first-child > .image {
+    background-image: url("https://images.unsplash.com/photo-1565626424178-c699f6601afd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80");
+  }
+  
+  main > article:nth-child(2) > .image {
+    background-image: url("https://images.unsplash.com/photo-1535905557558-afc4877a26fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80");
+  }
+  
+  main > article:nth-child(3) > .image {
+    background-image: url("https://images.unsplash.com/photo-1660580554695-d2ca5008f1f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80");
+  }
+  
+  main > article:nth-child(4) > .image {
+    background-image: url("https://images.unsplash.com/photo-1660766877755-4cac24f6cf21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80");
+  }
+  
+  main > article > .image {
+    background-position: center;
+    background-size: cover;
+  }
+  
+  main > article > .description {
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 4rem; 
+  }
+  
+  main > article > .description > p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.25em;
+  }
+  
+  main > article > .description > p  > a:hover {
+    text-decoration: underline;
+  }
+  
+  main > article > .title {
+    align-items: center; 
+    justify-content: space-between;
+    padding: 2rem 4rem;
+  }
+  
+  main > article > .title * {
+    color: white;
+  }
+  
+  main > article > .title > h2 {
+    flex-basis: 50%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.5rem;
+    line-height: 3rem;
+    margin: 0px;
+    text-transform: uppercase;
+  }
+  
+  main > article > .title > i {
+    color: rgba(255, 255, 255, 0.75);
+    font-size:  4rem;
+  }
+  
+  main > article > .nav > .nav-button {
+    background-color: transparent;
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 3rem;
+    cursor: pointer;
+  }
+  
+  main > article > .nav > .nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.02);
+  }
+  
+  main > article > .nav > .nav-button:nth-child(2) {
+    border-left: 1px solid var(--border-color);
+  }
+
+  
+    main {
+      overflow-y: auto;
+    }
+    
+    main > article {
+      grid-template-columns: none;
+      grid-template-rows: 1.5fr repeat(3, 0.75fr) 0.25fr;
+      height: max(900px, 100%);
+    }
+     
+    main > article > .title > h2 {
+      font-size: 3rem; 
+      line-height: 2.6rem;
+    }
+    
+    main > article > .title > i {
+      font-size: 3rem; 
+    }
+    
+    main > article > .description,
+    main > article > .nav {
+      border-left: none;
+    }
+  
+    main > article > .image {
+      order: 1;
+    }
+    
+    main > article > .title {
+      border-bottom: 1px solid var(--border-color);
+      order: 2;
+    }
+    
+    main > article > .description {
+      justify-content: center;
+      order: 3;
+    }
+    
+    main > article > .nav {
+      border-bottom: 1px solid var(--border-color);
+      order: 4;
+    }
+    main > article {
+      grid-template-rows: 1fr repeat(4, 0.5fr);
+      height: max(700px, 100%);
+    }
+    
+    main > article > .title {
+      padding: 2rem;
+    }
+    
+    main > article > .title > h2 {
+      flex-basis: 70%;
+      font-size: 1.75em; 
+      line-height: 1.5rem;
+    }
+    
+    main > article > .title > i {
+      font-size: 2rem; 
+    }
+    
+    main > article > .description {
+      padding: 2rem;
+    }
+    
+    main > article > .description > p {
+      font-size: 1rem;
+    }
+ 

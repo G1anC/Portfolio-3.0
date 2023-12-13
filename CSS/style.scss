@@ -1,0 +1,153 @@
+@import "specifics/index";
+@import "specifics/contact";
+@import "specifics/hero";
+@import "specifics/works";
+@import "specifics/home";
+
+@font-face { font-family: 'Rosie'; src: url('../ASSETS/fonts/Rosie.woff2') format('woff2'); }
+@font-face { font-family: 'Croissant'; src: url('../ASSETS/fonts/Croissant.woff2') format('woff2'); }
+@font-face { font-family: 'BitMap'; src: url('../ASSETS/fonts/BitMap.woff2') format('woff2'); }
+@font-face { font-family: 'Eiko'; src: url('../ASSETS/fonts/PPEiko-Medium.otf') format("opentype"); }
+
+$stylish-font : "Rosie";
+$details-font : "BitMap";
+$bg-color : #1a1615; 
+$first-color: #dbfdff;
+$violet:#7f00ff;
+$dark-violet:rgb(47, 4, 90);
+$in-between-violet: rgb(0, 42, 255);
+$blue: #11c7f5;
+
+@keyframes background-pan {
+    from { background-position: 0% center; }
+    to { background-position: -200% center; }
+}
+
+@keyframes star-rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+
+
+//______________________________________ GENERAL BODY SETTINGS ______________________________________//
+
+
+
+html {
+    body {
+        top: 0;
+        left: 0;
+        -webkit-font-smoothing:antialiased;
+        background: $bg-color;
+        scroll-behavior: smooth;
+        font-size: 25px;
+        // font-style: italic;
+        width: 100vw;
+        margin-top: 0px;
+        margin-left: 0;
+        font-family: $details-font;
+        .magic {
+            animation: background-pan 3s linear infinite;
+            white-space: nowrap;
+            background: linear-gradient(to right, $blue, $violet, $blue);
+            background-size: 200%;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding-right: 5px;
+        }
+        color: $first-color;
+        .title {
+            font-style: normal;
+            font-family: $stylish-font;
+            font-weight: 500;
+            font-size: 90px;
+            .to-grip {
+                margin-left: -10px;
+            }
+        }
+        .details {
+            font-family: $details-font; 
+            font-size: 90px;
+        }
+        #fadeInNextPage {
+            position: absolute;
+            width: 1000%;
+            height: 1000%;
+            opacity: 0;
+            background-color: $bg-color;
+        }
+    }
+}
+
+
+
+//______________________________________ NAVIGATION MENU SETTINGS ______________________________________//
+
+    
+
+nav {
+    position: absolute;
+    z-index: 10;
+    width: 100vw;
+    opacity: 0;
+    height: 100vh;
+    transition-property: opacity;
+    transition-duration: 333ms;
+    pointer-events: none;
+    background-color: rgba( 0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    .nav-wrapper {
+        display: grid;
+        overflow: visible;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 100%;
+        justify-items: center;
+        align-items: center;
+        a {
+            font-size: 5vw;
+            font-family: $details-font;
+            font-style: normal;
+            color: $first-color;
+
+            align-self: center;
+            text-decoration: none;
+            transition: all 0.2s;
+            &:hover {
+                animation: background-pan 5s linear infinite;
+                letter-spacing: 4px;
+                font-family: $stylish-font;
+                font-size: 12vw;
+                background: linear-gradient(to right, $blue, $violet, $blue);
+                background-size: 200%;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+}
+
+.bigger {
+    color: rgb(219, 253, 255);
+    font-size: 3.5vw;
+    font-style: italic;
+}
+.explain {
+    position: absolute;
+    bottom: 4vh;
+    left: 3vw;
+}
+
+
+//______________________________________ CENTER LANDMARK ______________________________________//
+
+
+
+.center-bar {
+    width: 0px;
+    height: 100%;
+    border: 1px white solid;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
