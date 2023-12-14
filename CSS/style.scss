@@ -9,11 +9,17 @@
 }
 
 @font-face {
+    font-family: 'Bulzing';
+    src: url("../ASSETS/fonts/Bulzing.ttf") format("truetype");
+
+}
+
+@font-face {
     font-family: 'Ahganirya';
     src: url("../ASSETS/fonts/Ahganirya.woff2");
 }
 
-$background: #121212;
+$background: linear-gradient(to bottom, #232323, #121212);
 $red: #DF7979;
 $stylish-letter-font: 'MySoul';
 $normal-font: 'Ahganirya';
@@ -31,15 +37,13 @@ body {
     .upper-section {
         position: absolute;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         height: 10vh;
         width: 100vw;
         top: 0;
         left: 0;
         .logo {
-            margin-top: 10px;
-            margin-left: 10px;
             img {
                 width: 40px;
                 height: 40px;
@@ -49,13 +53,19 @@ body {
             background: rgba(255, 255, 255, 0.5);
             width: 90%;
             height: 1px;
+            z-index: 4;
         }
         .hamburger  {
             width: 60px;
             height: 60px;
             z-index: 3;
             transition: all 0.2s;
-            &:hover { svg { path { fill: $red; }}}
+            &:hover {
+                svg {
+                    fill: $red;
+                    stroke: $red;
+                }
+            }
         }
     }
 
@@ -65,21 +75,32 @@ body {
         position: fixed;
         right: -31vw;
         top: 0;
-        border-left: 1px solid white;
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
         z-index: 2;
         background: linear-gradient(to right, rgba(26, 25, 25, 0.21), rgba(0,0,0,1));
         backdrop-filter: blur(20px);
         .nav-wrapper {
             height: 100%;
             width: 90%;
-            margin-right: 10%;
+            margin-right: 7%;
             display:flex;
             flex-direction: column;
             justify-content: center;
             align-items: end;
             .link {
-                margin-bottom: 2vh;
-                margin-top: 2vh;
+                display:flex;
+                align-items: center;
+                padding: 8px;
+                height: 15%;
+                transition: background 0.2s;
+                &:hover {
+                    background: white;
+                    a {
+                        font-family: 'Bulzing';
+                        font-size: 6vw;
+                        color: black;
+                    }
+                }
                 a {
                     font-size: 2vw;
                     text-decoration: none;
