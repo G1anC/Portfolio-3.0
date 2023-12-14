@@ -205,16 +205,8 @@
 }
 
 @font-face {
-  font-family: "MySoul";
-  src: url("../ASSETS/fonts/MySoul.woff2");
-}
-@font-face {
   font-family: "Zilla";
   src: url("../ASSETS/fonts/ZillaSlab.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Ahganirya";
-  src: url("../ASSETS/fonts/Ahganirya.woff2");
 }
 @font-face {
   font-family: "PlayFair";
@@ -253,7 +245,7 @@
 #to-appear .selectors-wrapper .selector:hover {
   font-family: "Zilla";
   color: white;
-  font-size: 5vw;
+  font-size: 7vw;
 }
 #to-appear .projects-wrapper {
   position: absolute;
@@ -267,7 +259,6 @@
   position: absolute;
   background-size: cover;
   width: calc(100% - 50px);
-  opacity: 50%;
   height: 100%;
   right: 0;
 }
@@ -281,8 +272,19 @@
           backdrop-filter: blur(30px);
   background-color: rgba(0, 0, 0, 0.1);
 }
+#to-appear .projects-wrapper .project .blur-screen img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 #to-appear .projects-wrapper .project .blur-screen .project-text {
-  margin-left: 30px;
+  z-index: 5;
+  position: absolute;
+  margin-left: 20px;
   opacity: 100%;
 }
 

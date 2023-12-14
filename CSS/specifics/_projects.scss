@@ -1,24 +1,14 @@
-@font-face {
-    font-family: 'MySoul';
-    src: url("../ASSETS/fonts/MySoul.woff2");
-}
-@font-face {
+
+@font-face { 
     font-family: 'Zilla';
     src: url("../ASSETS/fonts/ZillaSlab.ttf") format("truetype");
-}
-@font-face {
-    font-family: 'Ahganirya';
-    src: url("../ASSETS/fonts/Ahganirya.woff2");
 }
 @font-face {
     font-family: 'PlayFair';
     src: url("../ASSETS/fonts/Playfair.ttf") format("truetype");
 }
 
-#to-disappear {
-    display: block;
-    opacity: 100%;
-}
+#to-disappear { display: block; opacity: 100%; }
 
 #to-appear {
     opacity: 0%;
@@ -45,7 +35,7 @@
             &:hover {
                 font-family: 'Zilla';
                 color: white;
-                font-size: 5vw;
+                font-size: 7vw;
             }
         }
     }
@@ -58,10 +48,8 @@
         width: calc(65vw + 50px);
         .project {
             position: absolute;
-            // background: url("../../.github/index.png");
             background-size: cover;
             width: calc(100% - 50px);
-            opacity: 50%;
             height: 100%;
             right: 0;
             .blur-screen { 
@@ -72,12 +60,21 @@
                 left: 0;
                 backdrop-filter: blur(30px);
                 background-color: rgba(0, 0, 0, 0.1);
+                img {
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    object-fit: cover;
+                }
                 .project-text {
-                    margin-left: 30px;
+                    z-index: 5;
+                    position: absolute;
+                    margin-left: 20px;
                     opacity: 100%;
                 }
             }
-
         }
     }
 }

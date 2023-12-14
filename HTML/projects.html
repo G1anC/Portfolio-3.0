@@ -54,55 +54,79 @@
         <div class="selectors-wrapper">
           <div class="selector" data-value="0">RPG</div>
           <div class="selector" data-value="1">PORTFOLIO</div>
+          <div class="selector" data-value="5">LES P'TITS BONHEURS</div>
           <div class="selector" data-value="2"><span id="number">42</span>SHELL</div>
           <div class="selector" data-value="3">GAME OF LIFE</div>
           <div class="selector" data-value="4">.DOTFILES</div>
-          <div class="selector" data-value="5">LES P'TITS BONHEURS</div>
           <div class="selector" data-value="6">EVELYNE CREATIONS</div>
         </div>
   
-        <div class="projects-wrapper" data-state="active">
-          <div class="project" id="RPG">
-            <div class="project-text">
-              Mini RPG game made in C using CSFML library.
-            </div>
-          </div>
-          <div class="project" id="Portfolio" data-value="inactive">
-            <div class="project-text">
-              My first fully fonctional Portfolio website.
-            </div>
-          </div>
-          <div class="project" id="shell" data-value="inactive">
-            <div class="project-text">
-              A UNIX shell terminal recreated in C.
-            </div>
-          </div>
-          <div class="project" id="GOF" data-value="inactive">
+        <div class="projects-wrapper">
+        <div class="project" id="RPG" data-state="active" data-name="RPG">
             <div class="blur-screen">
+              <img src="../ASSETS/works/rpg.jpg">
+              <div class="project-text">
+                Mini RPG game made in C using CSFML library.
+              </div>
+            </div>
+          </div>
+
+          <div class="project" id="Portfolio" data-value="inactive" data-name="Portfolio">
+            <div class="blur-screen">
+              <img src="../ASSETS/works/portfolio.jpg">
+              <div class="project-text">
+                My first fully fonctional Portfolio website.
+              </div>
+            </div>
+          </div>
+
+          <div class="project" id="shell" data-value="inactive" data-name="shell">
+            <div class="blur-screen">
+              <img src="../ASSETS/works/terminal.jpg">
+              <div class="project-text">
+                A UNIX shell terminal recreated in C.
+              </div>
+            </div>
+          </div>
+          
+          <div class="project" id="GOF" data-value="inactive" data-name="GOF">
+            <div class="blur-screen">
+              <img src="../ASSETS/works/gof.jpg">
               <div class="project-text">
                 A C program emulating Conway’s Game of Life.
               </div>
             </div>
           </div>
-          <div class="project" id="dotfiles" data-value="inactive">
-            <div class="project-text">
-              My custom Arch setup using Hyprland.
+
+          <div class="project" id="dotfiles" data-value="inactive" data-name="dotfiles">
+            <div class="blur-screen">
+              <img src="../ASSETS/works/dotfiles.jpg">
+              <div class="project-text">
+                My custom Arch setup using Hyprland.
+              </div>
             </div>
           </div>
-          <div class="project" id="LPB" data-value="inactive">
-            <div class="project-text">
-              My chef dad’s restaurant website to better communicate his work.
+
+          <div class="project" id="LPB" data-value="inactive" data-name="LPB">
+            <div class="blur-screen">
+              <img src="../ASSETS/works/lpb.jpg">
+              <div class="project-text">
+                My chef dad’s restaurant website to better communicate his work.
+              </div>
             </div>
           </div>
-          <div class="project" id="evelyne" data-value="inactive">
-            <div class="project-text">
-              My artist mom’s website to showcase her talents.
+
+          <div class="project" id="evelyne" data-value="inactive" data-name="evelyne">
+            <div class="blur-screen">
+              <img src="../ASSETS/works/evelyne.jpg">
+              <div class="project-text">
+                My artist mom’s website to showcase her talents.
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-      
+         </div>
+      </div> 
     </main>
+  
     <script src="../JS/navTrigger.js"></script>
     <script src="../JS/selectProject.js"></script>
     <script src="../JS/projectsAppear.js"></script>
