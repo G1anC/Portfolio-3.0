@@ -2,23 +2,27 @@
   <html lang="en">
   <head>
       <meta charset="UTF-8">
-      <link rel="stylesheet" href="../../CSS/style.css">
+      <link rel="stylesheet" href="../CSS/style.css">
       <link rel="shortcut icon" href="#">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>*.✧ Projects ✧.*</title>
   </head>
-  <body id="work-body">
-
+  <body id="projects-body">
     <div class="upper-section">
       <div class="logo">
           <a href="index.html">
-            <img src="ASSETS/images/logo.png">
+            <img src="../ASSETS/images/logo.png">
           </a>
       </div>
       <div class="upper-bar"></div>
-      <div class="sandwich" onclick="
-          triggerNav();    
-      "></div>
+      <div class="hamburger" onclick=" triggerNav(); ">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+            <path fill="#FFFFFF" d="M8.667,15h30c0.552,0,1-0.447,1-1s-0.448-1-1-1h-30c-0.552,0-1,0.447-1,1S8.114,15,8.667,15z"/>
+            <path fill="#FFFFFF" d="M8.667,37h30c0.552,0,1-0.447,1-1s-0.448-1-1-1h-30c-0.552,0-1,0.447-1,1S8.114,37,8.667,37z"/>
+            <path fill="#FFFFFF" d="M8.667,26h30c0.552,0,1-0.447,1-1s-0.448-1-1-1h-30c-0.552,0-1,0.447-1,1S8.114,26,8.667,26z"/>
+        </svg>
+      </div>
     </div>
 
     <nav>
@@ -31,68 +35,74 @@
     </nav>
 
     <main>
-      <div class="title-wrapper">
-        <span class="fancy-letter">P</span>ROJECTS<br>
-        &<span class="fancy-letter"> W</span>ORKS
-      </div>
-    
-      <div class="statue-wrapper" id="hands">
-        <img src="ASSETS/images/hands.png">
-      </div>
-    
-      <div class="little-text">
-        Dive into my works and projects.
-      </div>
-
-      <div class="selectors-wrapper">
-        <div class="selector" data-value="0">RPG</div>
-        <div class="selector" data-value="1">PORTFOLIO</div>
-        <div class="selector" data-value="2">42SHELL</div>
-        <div class="selector" data-value="3">GAME OF LIFE</div>
-        <div class="selector" data-value="4">.DOTFILES</div>
-        <div class="selector" data-value="5">LES P'TITS BONHEURS</div>
-        <div class="selector" data-value="6">EVELYNE CREATIONS</div>
-      </div>
-
-      <div class="projects-wrapper" data-state="active">
-        <div class="project" id="RPG">
-          <div class="project-text">
-            Mini RPG game made in C using CSFML library.
+      <div id="to-disappear">
+        <div class="title-wrapper">
+          <div class="title-container">
+            <span class="fancy-letter">P</span>ROJECTS<br>
+            &<span class="fancy-letter">W</span>ORKS
           </div>
         </div>
-        <div class="project" id="Portfolio" data-value="inactive">
-          <div class="project-text">
-            My first fully fonctional Portfolio website.
-          </div>
+        <div class="statue-wrapper" id="hands">
+          <!-- <img src="ASSETS/images/hands.png"> -->
         </div>
-        <div class="project" id="shell" data-value="inactive">
-          <div class="project-text">
-            A UNIX shell terminal recreated in C.
-          </div>
-        </div>
-        <div class="project" id="GOF" data-value="inactive">
-          <div class="project-text">
-            A C program emulating Conway’s Game of Life.
-          </div>
-        </div>
-        <div class="project" id="dotfiles" data-value="inactive">
-          <div class="project-text">
-            My custom Arch setup using Hyprland.
-          </div>
-        </div>
-        <div class="project" id="LPB" data-value="inactive">
-          <div class="project-text">
-            My chef dad’s restaurant website to better communicate his work.
-          </div>
-        </div>
-        <div class="project" id="evelyne" data-value="inactive">
-          <div class="project-text">
-            My artist mom’s website to showcase her talents.
-          </div>
+        <div class="little-text">
+          Dive into my works and projects.
         </div>
       </div>
+      
+      <div id="to-appear">
+        <div class="selectors-wrapper">
+          <div class="selector" data-value="0">RPG</div>
+          <div class="selector" data-value="1">PORTFOLIO</div>
+          <div class="selector" data-value="2"><span id="number">42</span>SHELL</div>
+          <div class="selector" data-value="3">GAME OF LIFE</div>
+          <div class="selector" data-value="4">.DOTFILES</div>
+          <div class="selector" data-value="5">LES P'TITS BONHEURS</div>
+          <div class="selector" data-value="6">EVELYNE CREATIONS</div>
+        </div>
+  
+        <div class="projects-wrapper" data-state="active">
+          <div class="project" id="RPG">
+            <div class="project-text">
+              Mini RPG game made in C using CSFML library.
+            </div>
+          </div>
+          <div class="project" id="Portfolio" data-value="inactive">
+            <div class="project-text">
+              My first fully fonctional Portfolio website.
+            </div>
+          </div>
+          <div class="project" id="shell" data-value="inactive">
+            <div class="project-text">
+              A UNIX shell terminal recreated in C.
+            </div>
+          </div>
+          <div class="project" id="GOF" data-value="inactive">
+            <div class="project-text">
+              A C program emulating Conway’s Game of Life.
+            </div>
+          </div>
+          <div class="project" id="dotfiles" data-value="inactive">
+            <div class="project-text">
+              My custom Arch setup using Hyprland.
+            </div>
+          </div>
+          <div class="project" id="LPB" data-value="inactive">
+            <div class="project-text">
+              My chef dad’s restaurant website to better communicate his work.
+            </div>
+          </div>
+          <div class="project" id="evelyne" data-value="inactive">
+            <div class="project-text">
+              My artist mom’s website to showcase her talents.
+            </div>
+          </div>
+        </div>
+      </div>
+      
     </main>
     <script src="../JS/navTrigger.js"></script>
     <script src="../JS/selectProject.js"></script>
+    <script src="../JS/projectsAppear.js"></script>
   </body>
 </html>

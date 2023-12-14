@@ -204,6 +204,42 @@
   color: transparent;
 }
 
+#to-disappear {
+  display: block;
+  opacity: 100%;
+}
+
+#to-appear {
+  opacity: 0%;
+  height: 100%;
+  width: 100%;
+}
+#to-appear .selectors-wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  line-height: 9vh;
+  transition: background 0.2s;
+}
+#to-appear .selectors-wrapper .selector {
+  display: flex;
+  justify-content: end;
+  text-align: end;
+  font-size: 1.8vw;
+  color: rgba(255, 255, 255, 0.6);
+  transition: background 0.2s;
+}
+#to-appear .selectors-wrapper .selector:hover {
+  font-family: "Bulzing";
+  font-size: 5vw;
+  justify-content: end;
+  color: black;
+  background: white;
+}
 @font-face {
   font-family: "MySoul";
   src: url("../ASSETS/fonts/MySoul.woff2");
@@ -297,15 +333,20 @@ body nav .nav-wrapper .link a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
+body main .little-text {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
 body main .title-wrapper {
   position: absolute;
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: starcentert;
+  justify-content: center;
   align-items: center;
   top: 0;
-  left: 10vw;
+  left: -10vw;
 }
 body main .title-wrapper .title-container {
   font-size: 5vw;
@@ -315,9 +356,4 @@ body main .title-wrapper .title-container .fancy-letter {
   color: #DF7979;
   font-size: 14vw;
   font-family: "MySoul";
-}
-body main .little-text {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
 }/*# sourceMappingURL=style.css.map */

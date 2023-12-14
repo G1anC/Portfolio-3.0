@@ -1,0 +1,44 @@
+
+#to-disappear {
+    display: block;
+    opacity: 100%;
+}
+#to-appear {
+    opacity: 0%;
+    height: 100%;
+    width: 100%;
+    .selectors-wrapper {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        padding-right: 8px;
+        padding-bottom: 8px;
+        line-height: 9vh;
+        transition: background 0.2s;
+        .selector {
+            display:flex;
+            justify-content: end;
+            text-align: end;
+            font-size: 1.8vw;
+            color: rgba(255, 255, 255, 0.6);
+            transition: background 0.2s;
+            &:hover {
+                font-family: 'Bulzing';
+                font-size: 5vw;
+                justify-content: end;
+                color: black;
+                background: white;
+            }
+        }
+    }
+    .projects-wrapper {
+        .project {
+            .project-text {
+
+            }
+        }
+    }
+}
+

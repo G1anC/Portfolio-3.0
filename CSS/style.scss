@@ -23,7 +23,6 @@ $background: linear-gradient(to bottom, #232323, #121212);
 $red: #DF7979;
 $stylish-letter-font: 'MySoul';
 $normal-font: 'Ahganirya';
-
 body {
     background: $background;
     color: white;
@@ -111,15 +110,20 @@ body {
     }
 
     main {
+        .little-text {
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+        }
         .title-wrapper {
             position: absolute;
             width: 100vw;
             height: 100vh;
             display: flex;
-            justify-content: starcentert;
+            justify-content: center;
             align-items: center;
             top: 0;
-            left: 10vw;
+            left: -10vw;
             .title-container {
                 font-size: 5vw;
                 line-height: 20vh;
@@ -129,11 +133,6 @@ body {
                     font-family: $stylish-letter-font;
                 }
             }
-        }
-        .little-text {
-            position: absolute;
-            left: 20px;
-            bottom: 20px;
         }
     }
 }
