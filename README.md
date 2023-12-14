@@ -8,7 +8,7 @@ To see how it looks like, clone the repo and start it with Live Server.
 If you want to see my actual PortFolio, check out ***https://G1anC.github.io***.
 
 ### Templates
-![image](https://github.com/G1anC/PortFolio-3.0/ASSETS/114910356/8ee95fa4-15da-46f3-a934-2cda6f8d1f6a)
+[![image](https://github.com/G1anC/PortFolio-3.0/ASSETS/114910356/8ee95fa4-15da-46f3-a934-2cda6f8d1f6a)](https://github.com/G1anC/Portfolio-3.0/blob/main/.github/index.png)
 <br>
 
 ![image](https://github.com/G1anC/Portfolio/blob/main/ASSETS/images/about.png)
