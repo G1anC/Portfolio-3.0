@@ -1,8 +1,25 @@
+@font-face {
+    font-family: 'MySoul';
+    src: url("../ASSETS/fonts/MySoul.woff2");
+}
+@font-face {
+    font-family: 'Zilla';
+    src: url("../ASSETS/fonts/ZillaSlab.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Ahganirya';
+    src: url("../ASSETS/fonts/Ahganirya.woff2");
+}
+@font-face {
+    font-family: 'PlayFair';
+    src: url("../ASSETS/fonts/Playfair.ttf") format("truetype");
+}
 
 #to-disappear {
     display: block;
     opacity: 100%;
 }
+
 #to-appear {
     opacity: 0%;
     height: 100%;
@@ -15,21 +32,20 @@
         flex-direction: column;
         padding-right: 8px;
         padding-bottom: 8px;
-        line-height: 9vh;
+        line-height: 11vh;
         transition: background 0.2s;
         .selector {
             display:flex;
             justify-content: end;
             text-align: end;
-            font-size: 1.8vw;
+            font-size: 5vw;
+            font-family: 'PlayFair';
+            height: 100%;
             color: rgba(255, 255, 255, 0.6);
-            transition: background 0.2s;
             &:hover {
-                font-family: 'Bulzing';
+                font-family: 'Zilla';
+                color: white;
                 font-size: 5vw;
-                justify-content: end;
-                color: black;
-                background: white;
             }
         }
     }

@@ -204,6 +204,22 @@
   color: transparent;
 }
 
+@font-face {
+  font-family: "MySoul";
+  src: url("../ASSETS/fonts/MySoul.woff2");
+}
+@font-face {
+  font-family: "Zilla";
+  src: url("../ASSETS/fonts/ZillaSlab.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Ahganirya";
+  src: url("../ASSETS/fonts/Ahganirya.woff2");
+}
+@font-face {
+  font-family: "PlayFair";
+  src: url("../ASSETS/fonts/Playfair.ttf") format("truetype");
+}
 #to-disappear {
   display: block;
   opacity: 100%;
@@ -222,35 +238,38 @@
   flex-direction: column;
   padding-right: 8px;
   padding-bottom: 8px;
-  line-height: 9vh;
+  line-height: 11vh;
   transition: background 0.2s;
 }
 #to-appear .selectors-wrapper .selector {
   display: flex;
   justify-content: end;
   text-align: end;
-  font-size: 1.8vw;
+  font-size: 5vw;
+  font-family: "PlayFair";
+  height: 100%;
   color: rgba(255, 255, 255, 0.6);
-  transition: background 0.2s;
 }
 #to-appear .selectors-wrapper .selector:hover {
-  font-family: "Bulzing";
+  font-family: "Zilla";
+  color: white;
   font-size: 5vw;
-  justify-content: end;
-  color: black;
-  background: white;
 }
 @font-face {
   font-family: "MySoul";
   src: url("../ASSETS/fonts/MySoul.woff2");
 }
 @font-face {
-  font-family: "Bulzing";
-  src: url("../ASSETS/fonts/Bulzing.ttf") format("truetype");
+  font-family: "Zilla";
+  src: url("../ASSETS/fonts/ZillaSlab.ttf") format("truetype");
 }
 @font-face {
   font-family: "Ahganirya";
   src: url("../ASSETS/fonts/Ahganirya.woff2");
+}
+@font-face {
+  font-family: "PlayFair";
+  src: url("../ASSETS/fonts/Playfair.ttf") format("truetype");
 }
 body {
   background: linear-gradient(to bottom, #232323, #121212);
@@ -320,18 +339,16 @@ body nav .nav-wrapper .link {
   height: 15%;
   transition: background 0.2s;
 }
-body nav .nav-wrapper .link:hover {
-  background: white;
-}
-body nav .nav-wrapper .link:hover a {
-  font-family: "Bulzing";
-  font-size: 6vw;
-  color: black;
-}
 body nav .nav-wrapper .link a {
-  font-size: 2vw;
+  font-size: 4vw;
   text-decoration: none;
+  font-family: "PlayFair";
   color: rgba(255, 255, 255, 0.6);
+}
+body nav .nav-wrapper .link a:hover {
+  font-family: "Zilla";
+  font-size: 5vw;
+  color: white;
 }
 body main .little-text {
   position: absolute;
@@ -349,11 +366,12 @@ body main .title-wrapper {
   left: -10vw;
 }
 body main .title-wrapper .title-container {
-  font-size: 5vw;
-  line-height: 20vh;
+  font-size: 12vw;
+  font-family: "PlayFair";
+  line-height: 27vh;
 }
 body main .title-wrapper .title-container .fancy-letter {
   color: #DF7979;
-  font-size: 14vw;
+  font-size: 17vw;
   font-family: "MySoul";
 }/*# sourceMappingURL=style.css.map */

@@ -7,22 +7,25 @@
     font-family: 'MySoul';
     src: url("../ASSETS/fonts/MySoul.woff2");
 }
-
 @font-face {
-    font-family: 'Bulzing';
-    src: url("../ASSETS/fonts/Bulzing.ttf") format("truetype");
-
+    font-family: 'Zilla';
+    src: url("../ASSETS/fonts/ZillaSlab.ttf") format("truetype");
 }
-
 @font-face {
     font-family: 'Ahganirya';
     src: url("../ASSETS/fonts/Ahganirya.woff2");
+}
+@font-face {
+    font-family: 'PlayFair';
+    src: url("../ASSETS/fonts/Playfair.ttf") format("truetype");
 }
 
 $background: linear-gradient(to bottom, #232323, #121212);
 $red: #DF7979;
 $stylish-letter-font: 'MySoul';
 $normal-font: 'Ahganirya';
+$title-font : 'PlayFair';
+
 body {
     background: $background;
     color: white;
@@ -92,18 +95,16 @@ body {
                 padding: 8px;
                 height: 15%;
                 transition: background 0.2s;
-                &:hover {
-                    background: white;
-                    a {
-                        font-family: 'Bulzing';
-                        font-size: 6vw;
-                        color: black;
-                    }
-                }
                 a {
-                    font-size: 2vw;
+                    font-size: 4vw;
                     text-decoration: none;
+                    font-family: $title-font;
                     color: rgba(255, 255, 255, 0.6);
+                    &:hover {
+                        font-family: 'Zilla';
+                        font-size: 5vw;
+                        color: white;
+                    }
                 }
             }
         }
@@ -125,11 +126,12 @@ body {
             top: 0;
             left: -10vw;
             .title-container {
-                font-size: 5vw;
-                line-height: 20vh;
+                font-size: 12vw;
+                font-family: $title-font;
+                line-height: 27vh;
                 .fancy-letter {
                     color: $red;
-                    font-size: 14vw;
+                    font-size: 17vw;
                     font-family: $stylish-letter-font;
                 }
             }
