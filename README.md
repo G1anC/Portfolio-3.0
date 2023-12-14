@@ -1,6 +1,6 @@
  <h1 style="color:blue;">My PortFolio</h1>
 
-***This is my personal portfolio.*** It is a training to frond-end and a great entry to my level as you would come across my Github.
+***This is my third personal portfolio.*** This site is a reinformcement of all my knowledge of frond-end and is the most advanced project i've made as a web developer.
 
 ### How to use it
 
