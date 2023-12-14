@@ -18,8 +18,6 @@
         position: absolute;
         right: 0;
         bottom: 0;
-        display: flex;
-        flex-direction: column;
         padding-right: 8px;
         padding-bottom: 8px;
         line-height: 11vh;
@@ -27,10 +25,8 @@
         .selector {
             display:flex;
             justify-content: end;
-            text-align: end;
             font-size: 5vw;
             font-family: 'PlayFair';
-            height: 100%;
             color: rgba(255, 255, 255, 0.6);
             &:hover {
                 font-family: 'Zilla';
@@ -45,11 +41,11 @@
         top: 75px;
         left: 0;
         height: 80vh;
-        width: calc(65vw + 50px);
+        width: 70vw;
         .project {
             position: absolute;
             background-size: cover;
-            width: calc(100% - 50px);
+            width: 65vw;
             height: 100%;
             right: 0;
             .blur-screen { 
@@ -59,7 +55,7 @@
                 top: 0;
                 left: 0;
                 backdrop-filter: blur(30px);
-                background-color: rgba(0, 0, 0, 0.1);
+                background-color: rgba(0, 0, 0, 0.3);
                 img {
                     width: 100%;
                     position: absolute;
