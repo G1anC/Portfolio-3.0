@@ -8,22 +8,19 @@ To see how it looks like, clone the repo and start it with Live Server.
 If you want to see my actual PortFolio, check out ***https://G1anC.github.io***.
 
 ### Templates
-![image](https://github.com/G1anC/Portfolio-3.0/blob/main/.github/index.png)]
+![image](https://github.com/G1anC/Portfolio-3.0/blob/main/.github/index.png)
 <br>
-
-![image](https://github.com/G1anC/Portfolio/blob/main/ASSETS/images/about.png)
+![image](https://github.com/G1anC/Portfolio-3.0/blob/main/.github/work.png)
 <br>
-
-![image](https://github.com/G1anC/Portfolio/blob/main/ASSETS/images/works.png)
+![image](https://github.com/G1anC/Portfolio-3.0/blob/main/.github/workGOF.png)
 <br>
-
-![image](https://github.com/G1anC/Portfolio/blob/main/assets/images/home.png)
+![image](https://github.com/G1anC/Portfolio-3.0/blob/main/.github/workPortfolio.png)
 <br>
-
-![image](https://github.com/G1anC/Portfolio/blob/main/assets/images/contact.png)
+![image](https://github.com/G1anC/Portfolio-3.0/blob/main/.github/about.png)
 <br>
+![image](https://github.com/G1anC/Portfolio-3.0/blob/main/.github/nav.png)
 
-![image](https://github.com/G1anC/Portfolio/blob/main/assets/images/nav.png)
+![image](https://github.com/G1anC/Portfolio-3.0/blob/main/.github/about.png)
 
 ### Credits
 
