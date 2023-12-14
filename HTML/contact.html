@@ -8,111 +8,49 @@
     <title>*.✧ Contact ✧.*</title>
 </head>
 <body class="contact-body">
-    <div id="fadeInNextPage"></div>
-    <nav>
-        <div class="nav-wrapper">
-                <a data-value="home"  class="link cript-js" href="home.html"> home</a>
-                <a data-value="about-me" class="link cript-js" href="hero.html">      about-me</a>
-                <a data-value="works"    class="link cript-js" href="works.html">     works</a>
-        </div>
-    </nav>
+  <div class="contact-wrapper">
+    <div class="medias-wrapper">
+      <div class="medias">
+        <a href="https://www.instagram.com/noah.stngr/"><img class="instagram" src="../ASSETS/icons/instagram.png"></a>
+        <a href="https://github.com/G1anC"><img class="github" src="../ASSETS/icons/github.png"></a>
+        <a href="https://www.linkedin.com/in/noah-steiniger-a08298263/"><img class="linkedin" src="../ASSETS/icons/linkedIn.webp"></a>    
+      </div>
+    </div>
 
-        <div class="contact-wrapper">
-
-            <div class="medias-wrapper">
-                <div class="medias">
-                    <a href="https://www.instagram.com/noah.stngr/"><img class="instagram" src="../ASSETS/icons/instagram.png"></a>
-                    <a href="https://github.com/G1anC"><img class="github" src="../ASSETS/icons/github.png"></a>
-                    <a href="https://www.linkedin.com/in/noah-steiniger-a08298263/"><img class="linkedin" src="../ASSETS/icons/linkedIn.webp"></a>                    
-                </div>
-            </div>
-
-            <form class="form-wrapper" action="https://formspree.io/f/xvojngnj" method="POST">
-                    
-
-                    <label>
-                        <input
-                            data-value="email"
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="email"
-                            class="cript-js style-inputs"
-                            required
-                        >
-                    </label>
-
-                    <label>
-                        <textarea
-                            data-value="message"
-                            name="gotcha"
-                            id="message"
-                            cols="30"
-                            rows="10"
-                            placeholder="message"
-                            class="cript-js message"
-                        ></textarea>
-                    </label>
-                    
-
-                    <button
-                        data-value="submit"
-                        type="submit"
-                        value="Submit"
-                        class="cript-js style-inputs"
-                        id="contact-button"
-                    >submit</button>
-
-            </div>
-
-        </div>
-        <script src="https://smtpJS/.com/v3/smtp.js"></script>
-        <script src="../JS/navTrigger.js"></script>
-        <script src="../JS/letterChanger.js"></script>
-        <script>
-            const handleEmail = event => {
-    
-                let fn = document.getElementById("fullname");
-                let e = document.getElementById("email");
-                let m = document.getElementById("message");
-
-                // reset color if the value !== undefined
-                fn.style.borderColor = "rgba(135, 170, 172, 0.3)";
-                e.style.borderColor = "rgba(135, 170, 172, 0.3)";
-                m.style.borderColor = "rgba(135, 170, 172, 0.3)";
-
-                if (event.key && event.key !== "Enter") { return; }
-
-                let fnText = document.querySelector(".fullName").value;
-                if (!fnText) { fn.style.borderColor = "red"; }
-
-
-                let eText = document.querySelector(".email").value;
-                if (!eText) { e.style.borderColor = "red"; }
-                
-                let mText = document.querySelector(".message").value;
-                if (!mText) { m.style.borderColor = "red"; }
-
-
-                if (!mText || !fnText || !eText) { return; }
-
-                Email.send({
-                    Host: "smtp.gmail.com",
-                    Username: fullName,
-                    Password: "Enter your password",
-                    To: 'steinigernoah@gmail.com',
-                    From: fullName,
-                    Subject: "PORTFOLIO CONTACT FORM",
-                    Body: fullName + "\n\n" + text,
-                }).then(
-                    message => alert("mail sent successfully")  
-                );
-                m.innerText = "";
-            };
-
-            document.addEventListener('keydown', handleEmail);
-            document.getElementById("contact-button").addEventListener("click", handleEmail)
-        </script>
-        <div id="text-to-copy" style="display:none;">noah.steiniger@epitech.eu</div>
+    <form class="form-wrapper" action="https://formspree.io/f/xvojngnj" method="POST">
+      <label>
+        <input
+          data-value="email"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="email"
+          class="cript-js style-inputs"
+          required
+        >
+      </label>
+      <label>
+        <textarea
+          data-value="message"
+          name="gotcha"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="message"
+          class="cript-js message"
+        ></textarea>
+      </label>
+      <button
+        data-value="submit"
+        type="submit"
+        value="Submit"
+        class="cript-js style-inputs"
+        id="contact-button"
+      >submit</button>
+    </div>
+  </div>
+  <script src="https://smtpJS/.com/v3/smtp.js"></script>
+  <script src="../JS/navTrigger.js"></script>  
+  <div id="text-to-copy" style="display:none;">noah.steiniger@epitech.eu</div>
 </body>
 </html>

@@ -27,19 +27,43 @@ body {
     width: 100vw;
     overflow: hidden;
     background-repeat: no-repeat;
+
     .upper-section {
         position: absolute;
-        height: 3vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
         width: 100vw;
         top: 0;
         left: 0;
-
+        .logo {
+            margin-top: 10px;
+            margin-left: 10px;
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .upper-bar {
+            background: rgba(255, 255, 255, 0.5);
+            width: 90%;
+            height: 1px;
+        }
+        .hamburger  {
+            width: 60px;
+            height: 60px;
+            z-index: 3;
+            transition: all 0.2s;
+            &:hover { svg { path { fill: $red; }}}
+        }
     }
+
     nav {
         width: 30vw;
         height: 100vh;
         position: fixed;
-        right: -30vw;
+        right: -31vw;
         top: 0;
         border-left: 1px solid white;
         z-index: 2;
@@ -64,6 +88,7 @@ body {
             }
         }
     }
+
     main {
         .title-wrapper {
             position: absolute;
