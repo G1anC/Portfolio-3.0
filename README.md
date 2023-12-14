@@ -9,12 +9,12 @@ If you want to see my actual PortFolio, check out ***https://G1anC.github.io***.
 
 ### Templates
 ![image](https://github.com/G1anC/Portfolio-3.0/blob/main/.github/index.png)
+![image](https://github.com/G1anC/Portfolio-3.0/blob/main/.github/nav.png)
 ![image](https://github.com/G1anC/Portfolio-3.0/blob/main/.github/work.png)
 ![image](https://github.com/G1anC/Portfolio-3.0/blob/main/.github/workPortfolio.png)
 ![image](https://github.com/G1anC/Portfolio-3.0/blob/main/.github/workGOF.png)
 ![image](https://github.com/G1anC/Portfolio-3.0/blob/main/.github/about.png)
-![image](https://github.com/G1anC/Portfolio-3.0/blob/main/.github/nav.png)
-![image](https://github.com/G1anC/Portfolio-3.0/blob/main/.github/about.png)
+![image](https://github.com/G1anC/Portfolio-3.0/blob/main/.github/contact.png)
 
 ### Credits
 
