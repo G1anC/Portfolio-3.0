@@ -11,6 +11,12 @@
     font-family: 'Zilla';
     src: url("../ASSETS/fonts/ZillaSlab.woff2");
 }
+
+@font-face {
+    font-family: 'Cordelia';
+    src: url("../ASSETS/fonts/Cordelia.woff2");
+}
+
 @font-face {
     font-family: 'Ahganirya';
     src: url("../ASSETS/fonts/Ahganirya.woff2");
@@ -24,7 +30,7 @@ $background: linear-gradient(to bottom, #232323, #121212);
 $red: #DF7979;
 $stylish-letter-font: 'MySoul';
 $normal-font: 'Ahganirya';
-$title-font : 'PlayFair';
+$title-font : 'Cordelia';
 
 body {
     background: $background;
@@ -46,6 +52,8 @@ body {
         top: 0;
         left: 0;
         .logo {
+            margin-top: 10px;
+            margin-left: 10px;
             img {
                 width: 40px;
                 height: 40px;
@@ -77,7 +85,7 @@ body {
         position: fixed;
         right: -31vw;
         top: 0;
-        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.333);
         z-index: 2;
         background: linear-gradient(to right, rgba(26, 25, 25, 0.21), rgba(0,0,0,1));
         backdrop-filter: blur(20px);

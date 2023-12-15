@@ -14,7 +14,7 @@
     opacity: 0%;
     height: 100%;
     width: 100%;
-    .selectors-wrapper {
+    #selectors-wrapper {
         position: absolute;
         right: 0;
         bottom: 0;
@@ -26,6 +26,8 @@
             display:flex;
             justify-content: end;
             font-size: 5vw;
+            right: 3vw;
+            bottom: 0;
             font-family: 'PlayFair';
             color: rgba(255, 255, 255, 0.6);
             &:hover {
@@ -35,40 +37,42 @@
             }
         }
     }
-    .projects-wrapper {
+    #projects-wrapper {
         position: absolute;
         z-index: -3;
         top: 75px;
         left: 0;
         height: 80vh;
+        transform: scale(1);
         width: 70vw;
+        border-radius: 25px;
         .project {
             position: absolute;
             background-size: cover;
             width: 65vw;
             height: 100%;
             right: 0;
-            .blur-screen { 
+            .project-content-holder { 
                 width: 100%;
                 height: 100%;
                 position:absolute;
                 top: 0;
                 left: 0;
-                backdrop-filter: blur(30px);
-                background-color: rgba(0, 0, 0, 0.3);
                 img {
                     width: 100%;
+                    opacity: 80%;
+                    filter: blur(10px);
                     position: absolute;
                     left: 0;
                     top: 0;
                     height: 100%;
+                    border-radius: 25px;
                     object-fit: cover;
                 }
                 .project-text {
                     z-index: 5;
                     position: absolute;
                     margin-left: 20px;
-                    opacity: 100%;
                 }
             }
         }

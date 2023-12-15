@@ -4,14 +4,15 @@
       <meta charset="UTF-8">
       <link rel="stylesheet" href="../CSS/style.css">
       <link rel="shortcut icon" href="#">
+      <link rel="icon" type="image/png" href="../ASSETS/images/logo.png"/>
       <meta name="3wport" content="width=device-width, initial-scale=1.0">
       <title>*.✧ Projects ✧.*</title>
   </head>
   <body id="projects-body">
     <div class="upper-section">
       <div class="logo">
-          <a href="index.html">
-            <img src="../ASSETS/images/logo.png">
+          <a href="../index.html">
+            <img src="../ASSETS/images/logo.png" data-value="11">
           </a>
       </div>
       <div class="upper-bar"></div>
@@ -51,7 +52,7 @@
       </div>
       
       <div id="to-appear">
-        <div class="selectors-wrapper">
+        <div id="selectors-wrapper">
           <div class="selector" data-value="0">RPG</div>
           <div class="selector" data-value="1">PORTFOLIO</div>
           <div class="selector" data-value="2"><span id="number">42</span>SHELL</div>
@@ -61,10 +62,10 @@
           <div class="selector" data-value="6">EVELYNE CREATIONS</div>
         </div>
   
-        <div class="projects-wrapper">
-        <div class="project" id="RPG" data-state="active" data-value="0">
-            <div class="blur-screen">
-              <img src="../ASSETS/works/rpg.jpg">
+        <div id="projects-wrapper">
+          <div class="project" id="RPG" data-state="active" data-value="0">
+            <div class="project-content-holder">
+              <img class="project-image" src="../ASSETS/works/rpg.jpg">
               <div class="project-text">
                 Mini RPG game made in C using CSFML library.
               </div>
@@ -72,8 +73,8 @@
           </div>
 
           <div class="project" id="Portfolio" data-state="inactive" data-value="1">
-            <div class="blur-screen">
-              <img src="../ASSETS/works/portfolio.jpg">
+            <div class="project-content-holder">
+              <img class="project-image" src="../ASSETS/works/portfolio.jpg">
               <div class="project-text">
                 My first fully fonctional Portfolio website.
               </div>
@@ -81,8 +82,8 @@
           </div>
 
           <div class="project" id="shell" data-state="inactive" data-value="2">
-            <div class="blur-screen">
-              <img src="../ASSETS/works/terminal.jpg">
+            <div class="project-content-holder">
+              <img class="project-image" src="../ASSETS/works/terminal.jpg">
               <div class="project-text">
                 A UNIX shell terminal recreated in C.
               </div>
@@ -90,8 +91,8 @@
           </div>
           
           <div class="project" id="GOF" data-state="inactive" data-value="3">
-            <div class="blur-screen">
-              <img src="../ASSETS/works/gof.jpg">
+            <div class="project-content-holder">
+              <img class="project-image" src="../ASSETS/works/gof.jpg">
               <div class="project-text">
                 A C program emulating Conway&rsquo;s Game of Life.
               </div>
@@ -99,8 +100,8 @@
           </div>
 
           <div class="project" id="dotfiles" data-state="inactive" data-value="4">
-            <div class="blur-screen">
-              <img src="../ASSETS/works/dotfiles.jpg">
+            <div class="project-content-holder">
+              <img class="project-image" src="../ASSETS/works/dotfiles.jpg">
               <div class="project-text">
                 My custom Arch setup using Hyprland.
               </div>
@@ -108,8 +109,8 @@
           </div>
 
           <div class="project" id="LPB" data-state="inactive" data-value="5">
-            <div class="blur-screen">
-              <img src="../ASSETS/works/lpb.jpg">
+            <div class="project-content-holder">
+              <img class="project-image" src="../ASSETS/works/lpb.jpg">
               <div class="project-text">
                 My chef dad&rsquo;s restaurant website to better communicate his work.
               </div>
@@ -117,8 +118,8 @@
           </div>
 
           <div class="project" id="evelyne" data-state="inactive" data-value="6">
-            <div class="blur-screen">
-              <img src="../ASSETS/works/evelyne.jpg">
+            <div class="project-content-holder">
+              <img class="project-image" src="../ASSETS/works/evelyne.jpg">
               <div class="project-text">
                 My artist mom&rsquo;s website to showcase her talents.
               </div>
