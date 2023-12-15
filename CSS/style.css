@@ -249,6 +249,7 @@
   top: 75px;
   left: 0;
   height: 80vh;
+  transform: scale(1);
   width: 70vw;
   border-radius: 25px;
 }
