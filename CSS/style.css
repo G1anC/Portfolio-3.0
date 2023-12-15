@@ -270,7 +270,7 @@
 #to-appear #projects-wrapper .project .project-content-holder img {
   width: 100%;
   opacity: 80%;
-  filter: blur(20px);
+  filter: blur(10px);
   position: absolute;
   left: 0;
   top: 0;
@@ -283,7 +283,6 @@
   z-index: 5;
   position: absolute;
   margin-left: 20px;
-  opacity: 100%;
 }
 
 @font-face {
