@@ -4,6 +4,7 @@
       <meta charset="UTF-8">
       <link rel="stylesheet" href="../CSS/style.css">
       <link rel="shortcut icon" href="#">
+      <link rel="icon" type="image/png" href="../ASSETS/images/logo.png"/>
       <meta name="3wport" content="width=device-width, initial-scale=1.0">
       <title>*.✧ Projects ✧.*</title>
   </head>
@@ -51,7 +52,7 @@
       </div>
       
       <div id="to-appear">
-        <div class="selectors-wrapper">
+        <div id="selectors-wrapper">
           <div class="selector" data-value="0">RPG</div>
           <div class="selector" data-value="1">PORTFOLIO</div>
           <div class="selector" data-value="2"><span id="number">42</span>SHELL</div>
@@ -61,10 +62,10 @@
           <div class="selector" data-value="6">EVELYNE CREATIONS</div>
         </div>
   
-        <div class="projects-wrapper">
-        <div class="project" id="RPG" data-state="active" data-value="0">
+        <div id="projects-wrapper">
+          <div class="project" id="RPG" data-state="active" data-value="0">
             <div class="project-content-holder">
-              <img src="../ASSETS/works/rpg.jpg">
+              <img src="../ASSETS/works/rpg.jpg" data-value="0">
               <div class="project-text">
                 Mini RPG game made in C using CSFML library.
               </div>
@@ -73,7 +74,7 @@
 
           <div class="project" id="Portfolio" data-state="inactive" data-value="1">
             <div class="project-content-holder">
-              <img src="../ASSETS/works/portfolio.jpg">
+              <img src="../ASSETS/works/portfolio.jpg" data-value="1">
               <div class="project-text">
                 My first fully fonctional Portfolio website.
               </div>
@@ -82,7 +83,7 @@
 
           <div class="project" id="shell" data-state="inactive" data-value="2">
             <div class="project-content-holder">
-              <img src="../ASSETS/works/terminal.jpg">
+              <img src="../ASSETS/works/terminal.jpg" data-value="2">
               <div class="project-text">
                 A UNIX shell terminal recreated in C.
               </div>
@@ -91,7 +92,7 @@
           
           <div class="project" id="GOF" data-state="inactive" data-value="3">
             <div class="project-content-holder">
-              <img src="../ASSETS/works/gof.jpg">
+              <img src="../ASSETS/works/gof.jpg" data-value="3">
               <div class="project-text">
                 A C program emulating Conway&rsquo;s Game of Life.
               </div>
@@ -100,7 +101,7 @@
 
           <div class="project" id="dotfiles" data-state="inactive" data-value="4">
             <div class="project-content-holder">
-              <img src="../ASSETS/works/dotfiles.jpg">
+              <img src="../ASSETS/works/dotfiles.jpg" data-value="4">
               <div class="project-text">
                 My custom Arch setup using Hyprland.
               </div>
@@ -109,7 +110,7 @@
 
           <div class="project" id="LPB" data-state="inactive" data-value="5">
             <div class="project-content-holder">
-              <img src="../ASSETS/works/lpb.jpg">
+              <img src="../ASSETS/works/lpb.jpg" data-value="5">
               <div class="project-text">
                 My chef dad&rsquo;s restaurant website to better communicate his work.
               </div>
@@ -118,7 +119,7 @@
 
           <div class="project" id="evelyne" data-state="inactive" data-value="6">
             <div class="project-content-holder">
-              <img src="../ASSETS/works/evelyne.jpg">
+              <img src="../ASSETS/works/evelyne.jpg" data-value="6">
               <div class="project-text">
                 My artist mom&rsquo;s website to showcase her talents.
               </div>
