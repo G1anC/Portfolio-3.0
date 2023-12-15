@@ -251,6 +251,17 @@
   height: 80vh;
   width: 70vw;
 }
+#to-appear .projects-wrapper .blur-screen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  background-color: rgba(0, 0, 0, 0.3);
+}
 #to-appear .projects-wrapper .project {
   position: absolute;
   background-size: cover;
@@ -258,17 +269,14 @@
   height: 100%;
   right: 0;
 }
-#to-appear .projects-wrapper .project .blur-screen {
+#to-appear .projects-wrapper .project .project-content-holder {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
-  background-color: rgba(0, 0, 0, 0.3);
 }
-#to-appear .projects-wrapper .project .blur-screen img {
+#to-appear .projects-wrapper .project .project-content-holder img {
   width: 100%;
   position: absolute;
   left: 0;
@@ -277,7 +285,7 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-#to-appear .projects-wrapper .project .blur-screen .project-text {
+#to-appear .projects-wrapper .project .project-content-holder .project-text {
   z-index: 5;
   position: absolute;
   margin-left: 20px;
