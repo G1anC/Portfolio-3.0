@@ -103,16 +103,12 @@
   border: none !important;
   background: linear-gradient(to right, rgb(17, 199, 245), rgb(127, 0, 255), rgb(17, 199, 245));
   background-size: 200%;
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .form-wrapper #contact-button:focus {
   outline: none !important;
   border: none !important;
-}
-.form-wrapper #contact-button:focus::-moz-placeholder {
-  color: transparent;
 }
 .form-wrapper #contact-button:focus::placeholder {
   color: transparent;
@@ -139,10 +135,6 @@
   border-bottom-left-radius: 20px;
   transition: all 0.2s;
 }
-.form-wrapper textarea::-moz-placeholder {
-  color: rgba(223, 223, 223, 0.579);
-  padding: 30px 10px;
-}
 .form-wrapper textarea::placeholder {
   color: rgba(223, 223, 223, 0.579);
   padding: 30px 10px;
@@ -155,9 +147,6 @@
   outline: none !important;
   height: 60vh;
   border: 2px rgb(127, 0, 255) solid !important;
-}
-.form-wrapper textarea:focus::-moz-placeholder {
-  color: transparent;
 }
 .form-wrapper textarea:focus::placeholder {
   color: transparent;
@@ -177,17 +166,11 @@
   font-family: "BitMap";
   transition: all 0.2s;
 }
-.style-inputs::-moz-placeholder {
-  color: rgba(223, 223, 223, 0.579);
-}
 .style-inputs::placeholder {
   color: rgba(223, 223, 223, 0.579);
 }
 .style-inputs:hover {
   border: 1px solid rgb(219, 253, 255) !important;
-}
-.style-inputs:hover::-moz-placeholder {
-  opacity: 1;
 }
 .style-inputs:hover::placeholder {
   opacity: 1;
@@ -197,20 +180,17 @@
   height: 70px;
   border: 2px rgb(127, 0, 255) solid !important;
 }
-.style-inputs:focus::-moz-placeholder {
-  color: transparent;
-}
 .style-inputs:focus::placeholder {
   color: transparent;
 }
 
 @font-face {
   font-family: "Zilla";
-  src: url("../ASSETS/fonts/ZillaSlab.ttf") format("truetype");
+  src: url("../ASSETS/fonts/ZillaSlab.woff2");
 }
 @font-face {
   font-family: "PlayFair";
-  src: url("../ASSETS/fonts/Playfair.ttf") format("truetype");
+  src: url("../ASSETS/fonts/Playfair.woff2");
 }
 #to-disappear {
   display: block;
@@ -264,8 +244,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
   background-color: rgba(0, 0, 0, 0.3);
 }
 #to-appear .projects-wrapper .project .blur-screen img {
@@ -274,8 +253,7 @@
   left: 0;
   top: 0;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #to-appear .projects-wrapper .project .blur-screen .project-text {
   z-index: 5;
@@ -290,7 +268,7 @@
 }
 @font-face {
   font-family: "Zilla";
-  src: url("../ASSETS/fonts/ZillaSlab.ttf") format("truetype");
+  src: url("../ASSETS/fonts/ZillaSlab.woff2");
 }
 @font-face {
   font-family: "Ahganirya";
@@ -298,7 +276,7 @@
 }
 @font-face {
   font-family: "PlayFair";
-  src: url("../ASSETS/fonts/Playfair.ttf") format("truetype");
+  src: url("../ASSETS/fonts/Playfair.woff2");
 }
 body {
   background: linear-gradient(to bottom, #232323, #121212);
@@ -349,8 +327,7 @@ body nav {
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   z-index: 2;
   background: linear-gradient(to right, rgba(26, 25, 25, 0.21), rgb(0, 0, 0));
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 body nav .nav-wrapper {
   height: 100%;
