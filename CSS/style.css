@@ -235,6 +235,8 @@
   display: flex;
   justify-content: end;
   font-size: 5vw;
+  right: 3vw;
+  bottom: 0;
   font-family: "PlayFair";
   color: rgba(255, 255, 255, 0.6);
 }
@@ -294,6 +296,10 @@
   src: url("../ASSETS/fonts/ZillaSlab.ttf") format("truetype");
 }
 @font-face {
+  font-family: "Cordelia";
+  src: url("../ASSETS/fonts/Cordelia.woff2");
+}
+@font-face {
   font-family: "Ahganirya";
   src: url("../ASSETS/fonts/Ahganirya.woff2");
 }
@@ -321,6 +327,10 @@ body .upper-section {
   top: 0;
   left: 0;
 }
+body .upper-section .logo {
+  margin-top: 10px;
+  margin-left: 10px;
+}
 body .upper-section .logo img {
   width: 40px;
   height: 40px;
@@ -347,7 +357,7 @@ body nav {
   position: fixed;
   right: -31vw;
   top: 0;
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.333);
   z-index: 2;
   background: linear-gradient(to right, rgba(26, 25, 25, 0.21), rgb(0, 0, 0));
   -webkit-backdrop-filter: blur(20px);
@@ -372,7 +382,7 @@ body nav .nav-wrapper .link {
 body nav .nav-wrapper .link a {
   font-size: 4vw;
   text-decoration: none;
-  font-family: "PlayFair";
+  font-family: "Cordelia";
   color: rgba(255, 255, 255, 0.6);
 }
 body nav .nav-wrapper .link a:hover {
@@ -397,7 +407,7 @@ body main .title-wrapper {
 }
 body main .title-wrapper .title-container {
   font-size: 12vw;
-  font-family: "PlayFair";
+  font-family: "Cordelia";
   line-height: 27vh;
 }
 body main .title-wrapper .title-container .fancy-letter {
