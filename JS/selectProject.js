@@ -1,36 +1,30 @@
 function delay(milliseconds)
 {
     return new Promise((resolve) => {
-        setTimeout(resolve, milliseconds);
+        setTimeout(resolve, milliseconds)
     });
 }
 
 const projects = document.getElementsByClassName("project");
 
+Array.from(projects).forEach((element) => {
+    element.style.display = "none"
+})
+
 Array.from(document.getElementsByClassName("selector")).forEach((element) => {
     element.addEventListener("mouseenter", async (event) => {
-        let index = event.target.dataset.value;
-        const project = projects[index];
-        console.log(index);
-        let i = 0;
-        let newLeft = 0;
-        while (75 > newLeft) {
-            project.style.left = -newLeft + "vw";
-            newLeft -= 3;
-            await delay(0.1); 
-            i++;
+        let i = 0
+        let index = event.target.dataset.value
+        projects[index].style.display = "block"
+        while (i < 100) {
+            projects[index].style.opacity = i + "%"
+            i += 3
+            await delay(0.05)
         }
     })
-    element.addEventListener("mouseout", async (event) => {
-        let index = event.target.dataset.value;
-        const project = projects[index];
-        let i = 0;
-        let newLeft = 0;
-
-        while (i < 100) {
-            project.style.left = newLeft + "%"; 
-            pourcentage += 3;
-            await delay(0.1);
-        }
+    element.addEventListener("mouseleave", async (event) => {
+        index = event.target.dataset.value
+        projects[index].style.display = "none"
+        projects[index].style.opacity = "0%"
     })
 })
