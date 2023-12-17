@@ -9,7 +9,7 @@
 }
 @font-face {
     font-family: 'Zilla';
-    src: url("../ASSETS/fonts/ZillaSlab.ttf") format("truetype");
+    src: url("../ASSETS/fonts/ZillaSlab.woff2");
 }
 
 @font-face {
@@ -23,7 +23,7 @@
 }
 @font-face {
     font-family: 'PlayFair';
-    src: url("../ASSETS/fonts/Playfair.ttf") format("truetype");
+    src: url("../ASSETS/fonts/Playfair.woff2");
 }
 
 $background: linear-gradient(to bottom, #232323, #121212);
