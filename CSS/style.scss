@@ -11,26 +11,21 @@
     font-family: 'Zilla';
     src: url("../ASSETS/fonts/ZillaSlab.woff2");
 }
-
-@font-face {
-    font-family: 'Cordelia';
-    src: url("../ASSETS/fonts/Cordelia.woff2");
-}
-
 @font-face {
     font-family: 'Ahganirya';
     src: url("../ASSETS/fonts/Ahganirya.woff2");
 }
 @font-face {
-    font-family: 'PlayFair';
-    src: url("../ASSETS/fonts/Playfair.woff2");
+    font-family: 'Herkings';
+    src: url("../ASSETS/fonts/Herkings.woff2")
 }
+
 
 $background: linear-gradient(to bottom, #232323, #121212);
 $red: #DF7979;
 $stylish-letter-font: 'MySoul';
 $normal-font: 'Ahganirya';
-$title-font : 'Cordelia';
+$title-font : 'Ahganirya';
 
 body {
     background: $background;
@@ -94,6 +89,7 @@ body {
             width: 90%;
             margin-right: 7%;
             display:flex;
+            right: 0;
             flex-direction: column;
             justify-content: center;
             align-items: end;
@@ -104,7 +100,7 @@ body {
                 height: 15%;
                 transition: background 0.2s;
                 a {
-                    font-size: 4vw;
+                    font-size: 2.5vw;
                     text-decoration: none;
                     font-family: $title-font;
                     color: rgba(255, 255, 255, 0.6);
@@ -134,9 +130,10 @@ body {
             top: 0;
             left: -10vw;
             .title-container {
-                font-size: 12vw;
+                font-size: 6vw;
                 font-family: $title-font;
-                line-height: 27vh;
+                letter-spacing : -9px;
+                line-height: 22vh;
                 .fancy-letter {
                     color: $red;
                     font-size: 17vw;
